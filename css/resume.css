@@ -8,7 +8,7 @@ body
 {
 	/* this affects the margin on the content before sending to printer */
 	margin: 0px;
-	font-family: Ubuntu;
+	font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans;
 	font-size: .8em;
 	font-weight: 100;
 /*	background: url('../imgs/face320b.png') no-repeat bottom left;*/
@@ -104,7 +104,7 @@ h1 small {
 	border: 1.2em solid;
 	border-color: rgba(255,255,255,0) rgba(255,255,255,0) #eee  rgba(255,255,255,0);
 }
-.row .content .group:after{
+.row:after, .row .content .group:after{
     content: '';
     display: block;
     clear: both;
