@@ -40,9 +40,7 @@ h1 img.profile {
 h1 small {
 	font-size: .5em;
 	font-weight: 100;
-}
-small { /* hide age */
-    display: none;
+    display: none; /* hide age */
 }
 h1 .pdf-link:hover {
     background: #fff;
