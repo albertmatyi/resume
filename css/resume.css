@@ -35,6 +35,7 @@ h1 img.profile {
 	width: 80px;
 	position: relative;
 	top: 2em;
+	border-radius: 50%;
 }
 h1 small {
 	font-size: .5em;
@@ -45,13 +46,17 @@ small { /* hide age */
 }
 h1 .pdf-link:hover {
     background: #fff;
-    border-radius: 4px;
+    border-radius: 5px;
+/*    padding: 2em .5em 2em .4em;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 2px 2px 3px 3px #fff;*/
+/*    transition: box-shadow .1s;*/
 }
 h1 .pdf-link {
     color: #333;
     font-size: .5em;
     margin-left: 2em;
-    padding: 1em .5em 1em .4em;
+    padding: 1em .6em .7em .4em;
 }
 h1 .pdf-link img {
     position: relative;
