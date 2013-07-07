@@ -6,6 +6,16 @@
     <link href="css/resume.css" rel="stylesheet">
   </head>
   <body>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="resume">
       <div class="container">
         <div class="header">
@@ -396,8 +406,33 @@
             </div>
           </div>
         </div>
+        <div class="footer no-print">
+          <div>
+            Find the sources of this resume on
+            <a href="https://github.com/albertmatyi/resume">
+              <img src="imgs/icons/16/glyphicons_401_github.png" alt="" /> Github
+            </a>. Fork it if you
+            <div class="fb-like" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="trebuchet ms"></div>
+            /
+            <!-- Place this tag where you want the +1 button to render. -->
+            <div class="g-plusone" data-size="small" data-annotation="none" data-width="200"></div>
+            it.
+          </div>
+          <div>
+            This page is using icons from <a href="http://glyphicons.com/">glyphicons.com</a>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
     <script type="text/javascript">
     // <![CDATA[
       var YEARS_IN_MILLIS = 1000 * 60 * 60 * 24 * 365; // not taking into account leap years

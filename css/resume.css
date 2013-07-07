@@ -43,10 +43,15 @@ h1 small {
 small { /* hide age */
     display: none;
 }
+h1 .pdf-link:hover {
+    background: #fff;
+    border-radius: 4px;
+}
 h1 .pdf-link {
     color: #333;
     font-size: .5em;
     margin-left: 2em;
+    padding: 1em .5em 1em .4em;
 }
 h1 .pdf-link img {
     position: relative;
@@ -220,6 +225,31 @@ table.languages td:last-child{
     }
 }
 
+.footer {
+    text-align: center;
+    position: relative;
+    top: 6em;
+}
+.footer > * {
+    padding: .3em;
+}
+.footer img {
+    position: relative;
+    top: 4px;
+}
+.footer a {
+    background: rgba(255, 255, 255, .7);
+    padding: 2px;
+    border-radius: 3px;
+}
+.footer .fb-like {
+    position: relative;
+    top: 6px;
+}
+.footer div[id*=plusone] {
+    position: relative;
+    top: 3px;
+}
 @media print {
 	#resume, body {
 		height: 100%;
