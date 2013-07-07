@@ -197,3 +197,6 @@ table.languages td:last-child{
     display: block;
     clear: both;
 }
+.row:last-child{
+        padding-bottom: 10em;
+}
