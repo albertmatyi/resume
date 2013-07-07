@@ -11,87 +11,105 @@ body
 	font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans;
 	font-size: .8em;
 	font-weight: 100;
-/*	background: url('../imgs/face320b.png') no-repeat bottom left;*/
-	margin: 1em;
+	background: #fff center no-repeat fixed url('../imgs/bgs.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: inherit;
+    min-height: inherit;
 }
 @media all {
 	.page-break  { display: none; }
 }
-@media print {
-	.content.projects .group, .group p {
-	   page-break-inside: avoid;
-	}
-    .page-break  {
-        display: block;
-        page-break-before: always;
-    }
-	.no-print, title {
-	   display: none;
-	}
-	.profiler-results {
-	   display: none;
-	}
-	body{
-	   margin: 0;
-	}
-}
 a {
-    text-decoration: none;
-    color: #39f;
+	text-decoration: none;
+	color: #39f;
 }
 h1, th {
-    font-weight: normal;
+	font-weight: normal;
+}
+h1 {
+    margin-bottom: 5em;
 }
 h1 img.profile {
-    width: 80px;
-    position: relative;
-    top: 2em;
+	width: 80px;
+	position: relative;
+	top: 2em;
 }
 h1 small {
+	font-size: .5em;
+	font-weight: 100;
+}
+small { /* hide age */
+    display: none;
+}
+h1 .pdf-link {
+    color: #333;
     font-size: .5em;
-    font-weight: 100;
+    margin-left: 2em;
+}
+h1 .pdf-link img {
+    position: relative;
+    top: 10px;
+}
+h1 .pdf-link:after {
+    content: 'pdf';
+}
+#email-address:before {
+    content: '\61\6c\62\65\72\74\6d\61\74\79\69\40\67\6d\61\69\6c\2e\63\6f\6d';
+    /* '\\'+'mail@encode.er'.split('').map(function(e){return parseInt(e.charCodeAt(), 10).toString(16);}).join('\\');*/
+
+}
+#phone1:before {
+    content: '+49 1774402072';
+}
+#phone2:before {
+    content: '+40 720030050';
 }
 .row, .row div {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 .row {
-    clear: both;
+	clear: both;
 }
 .row .head {
-    float: left;
-    width: 25%;
-    margin: .7em 0em .5em 0em;
-    font-size: 1.5em;
-    text-align: right;
-    clear: both;
-    position: relative;
+	float: left;
+	width: 25%;
+	margin: .7em 0em .5em 0em;
+	font-size: 1.5em;
+	text-align: right;
+	clear: both;
+	position: relative;
 }
 .row .head p {
-    font-size: .6em;
-    position: relative;
-/*    text-align: left;*/
-    width: 300%;
-    top: -.4em;
-    left: 95%;
+	font-size: .6em;
+	position: relative;
+	/*    text-align: left;*/
+	width: 300%;
+	top: -.4em;
+	left: 95%;
 }
 .row .content {
-    width: 80%;
-    padding-right: 7px;
-    float: right;
-    position: relative;
+	width: 80%;
+	padding-right: 7px;
+	float: right;
+	position: relative;
 }
 .row .content .group {
-    position: relative;
-    background: #eee;
-    padding: .3em .5em;
-    margin-top: .6em;
-    border-radius: 4px;
-    clear: both;
-    box-shadow: 2px 2px 2px rgba(0,0,0, .31);
+	position: relative;
+	background: #fff;
+	padding: .3em .5em;
+	margin: 3em 0em 3em 0em;
+	border-radius: 4px;
+	clear: both;
+	box-shadow: 2px 2px 2px rgba(0,0,0, .31);
+}
+.row .content .group p {
+    line-height: 1.5em;
 }
 .row .content .group h4 {
-    margin-top: .5em;
+	margin-top: .5em;
 }
 .row .content:before {
 	content: ' ';
@@ -100,103 +118,144 @@ h1 small {
 	width: 0;
 	height: 0;
 	left: .7em;
-	top: -1.6em;
+	top: .8em;
 	border: 1.2em solid;
-	border-color: rgba(255,255,255,0) rgba(255,255,255,0) #eee  rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0) rgba(255,255,255,0) #fff  rgba(255,255,255,0);
 }
 .row:after, .row .content .group:after{
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-    width: 0;
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 0;
 }
 .tags{
-    position: absolute;
-    left: -23%;
-    width: 20%;
-    top: -0em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    font-size: .8em;
+	position: absolute;
+	left: -23%;
+	width: 20%;
+	top: -0em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: .8em;
 }
 .tags li.title{
-    display: none;
+	display: none;
 }
 .tags li {
-    float: left;
-    background: #eee;
-    border-radius: 3px;
-    padding: 2px;
-    margin: 1px 2px;
+	float: left;
+	background: #fff;
+	border-radius: 3px;
+	padding: 2px;
+	margin: 1px 2px;
 
 }
 .row .contact {
-    float: right;
-    text-align: right;
+	float: right;
+	text-align: right;
 }
 .row .contact img{
-    position: relative;
-    top: 4px;
-    padding: 2px;
-    margin-left: .5em;
+	position: relative;
+	top: 4px;
+	padding: 2px;
+	margin-left: .5em;
 }
 .group h4 small {
-    float: right;
-    position: relative;
-    top: 2px;
-    text-align: right;
+	float: right;
+	position: relative;
+	top: 2px;
+	text-align: right;
 }
 .group h4 b, .group h4 small a {
-    display: block;
-    font-weight: normal;
-    clear: both;
+	display: block;
+	font-weight: normal;
+	clear: both;
 }
 .group h4 small a {
-    clear: right;
+	clear: right;
 }
 .group h4 {
-    font-weight: normal;
-    border-bottom: dashed 1px #ccc;
+	font-weight: normal;
+	border-bottom: dashed 1px #ccc;
 }
 .content.about {
-    font-style: italic;
-    font-weight: 100;
+	font-style: italic;
+	font-weight: 100;
 }
 .about .tags {
-    font-style: normal;
+	font-style: normal;
 }
 .about .tags .title {
-    display: block;
-    width: 100%;
-    clear: both;
-    background: none;
-    font-size: 1.2em;
+	display: block;
+	width: 100%;
+	clear: both;
+	background: none;
+	font-size: 1.2em;
 }
 table.languages td:last-child{
-    text-align: center;
+	text-align: center;
 }
 .misc h4 {
-    height: 0;
-    position: relative;
-    top: 1.9em;
+	height: 0;
+	position: relative;
+	top: 1.9em;
 }
 .misc .block {
-    position: relative;
-    top: -1em;
-    float: left;
-    margin-left: 2em;
+	position: relative;
+	top: -1em;
+	float: left;
+	margin-left: 2em;
 }
-/* HACK to display the last section's header */
-.page-break {
-    height: 1em;
-    width: 100%;
-/*    background: #f00;*/
-    display: block;
-    clear: both;
+#resume{
+	padding-bottom: 10em;
 }
-.row:last-child{
-        padding-bottom: 10em;
+#resume {
+	margin: 1em 2em 0em 2em;
+}
+@media all and (min-width: 940px){
+	#resume {
+    	width: 920px;
+      	margin: 1em auto 0em auto;
+    }
+}
+
+@media print {
+	#resume, body {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.tags li, .row .content .group {
+		background: #eee;
+	}
+	.row .content .group {
+		margin: .6em 0em 0em 0em;
+	}
+	.row .content:before {
+    	top: -1.6em !important;
+		border-color: rgba(255,255,255,0) rgba(255,255,255,0) #eee  rgba(255,255,255,0);
+	}
+	.row .content .group p {
+        line-height: 1.1em;
+    }
+	h1 {
+        margin-bottom: 17px;
+    }
+	.content.projects .group, .group p {
+		page-break-inside: avoid;
+	}
+	.page-break {
+		display: block;
+		page-break-before: always;
+		height: 1em;
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+	.no-print, title {
+		display: none;
+	}
+
 }
